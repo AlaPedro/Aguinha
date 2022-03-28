@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Aguinha - Contador de Água</title>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <h1>Aguinha</h1>
+    
+        <p>Qual sua meta diária em ml?</p>
+        <p id="newMeta">Sua metá diária de Água é de: 2000 ml</p>
+        <div class="inp-meta">
+            <input type="number" value="2000" id="inp-meta">
+            <button class="add-btn" onclick="changeMeta()">Definir meta</button>
+        </div>
+    
+        <div class="bar">
+            <div class="progressBar">
+                <p id="progressValue"></p>
+            </div>
+        </div>
+    
+        <div class="addWater">
+            <input id="inp-add" type="number" value="">
+            <button class="add-btn" onclick="addValue()">Adicionar<img class="add-img" src="/img/drop-icon.png" alt=""></button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
